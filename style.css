@@ -78,3 +78,8 @@ body {
 .content button:hover { 
   color: red !important;
 }
+.right-buttons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
