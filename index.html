@@ -4,90 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Myshop</title>
-</head>
-
-<body>
-
-<nav class="navbar">
-    <div class="logo">
-        <h1>Myshop</h1>
-    </div>
-
-    <div class="search">
-        <input type="text" placeholder="Search...">
-    </div>
-
-    <div class="right-buttons">
-        <a href="cart.html">🛒</a>
-        <a href="register.html">Sign in</a>
-        <a href="login.html">Log in</a>
-    </div>
-</nav>
-
-<div class="main">
-
-    <div class="sidebar">
-        <div class="content">Air Conditioners</div>
-        <div class="content">Apple</div>
-        <div class="content">Smartphones</div>
-        <div class="content">Gaming</div>
-        <div class="content">Laptops</div>
-        <div class="content">TV & Audio</div>
-        <div class="content">Home Appliances</div>
-        <div class="content">Beauty</div>
-    </div>
-
-    <div class="products">
-
-        <div class="card">
-            <h3>Smth1</h3>
-            <div class="price">$299</div>
-        </div>
-
-        <div class="card">
-            <h3>Smth2</h3>
-            <div class="price">$99</div>
-        </div>
-
-        <div class="card">
-            <h3>Smth3</h3>
-            <div class="price">$149</div>
-        </div>
-
-        <div class="card">
-            <h3>Smth4</h3>
-            <div class="price">$899</div>
-        </div>
-
-        <div class="card">
-            <h3>Smth5</h3>
-            <div class="price">$120</div>
-        </div>
-
-        <div class="card">
-            <h3>Smth6</h3>
-            <div class="price">$199</div>
-        </div>
-
-    </div>
-
-</div>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    background:white;
+    background:#f5f6f8;
 }
 
 .navbar{
     height:70px;
-    background:black;
+    background:#0f0f0f;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -101,7 +33,6 @@ body{
 
 .search input{
     width:420px;
-    max-width:100%;
     padding:10px 14px;
     border-radius:20px;
     border:none;
@@ -142,10 +73,14 @@ body{
     cursor:pointer;
 }
 
+.content:hover{
+    background:#f1f1f1;
+}
+
 .products{
     flex:1;
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3,1fr);
     gap:15px;
 }
 
@@ -155,6 +90,17 @@ body{
     overflow:hidden;
     box-shadow:0 4px 15px rgba(0,0,0,0.05);
     cursor:pointer;
+    transition:0.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
 }
 
 .card h3{
@@ -167,9 +113,81 @@ body{
     font-weight:bold;
     color:#111;
 }
-
-
 </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <h1>Myshop</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <div class="right-buttons">
+        <a href="cart.html">🛒</a>
+        <a href="register.html">Sign in</a>
+        <a href="login.html">Log in</a>
+    </div>
+</nav>
+
+<div class="main">
+
+    <div class="sidebar">
+        <div class="content">Air Conditioners</div>
+        <div class="content">Apple</div>
+        <div class="content">Smartphones</div>
+        <div class="content">Gaming</div>
+        <div class="content">Laptops</div>
+        <div class="content">TV & Audio</div>
+        <div class="content">Home Appliances</div>
+        <div class="content">Beauty</div>
+    </div>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800" alt="">
+            <h3>Smth1</h3>
+            <div class="price">$299</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="">
+            <h3>Smth2</h3>
+            <div class="price">$99</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800" alt="">
+            <h3>Smth3</h3>
+            <div class="price">$149</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800" alt="">
+            <h3>Smth4</h3>
+            <div class="price">$899</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" alt="">
+            <h3>Smth5</h3>
+            <div class="price">$120</div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=800" alt="">
+            <h3>Smth6</h3>
+            <div class="price">$199</div>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
